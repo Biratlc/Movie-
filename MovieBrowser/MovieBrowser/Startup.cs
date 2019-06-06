@@ -54,10 +54,17 @@ namespace MovieBrowser
 
             app.UseMvc(routes =>
             {
+                //routes.MapRoute(
+                //    "ByReleasedDate",
+                //    "Movies/ByReleasedDate/{year}/{month}",
+                //    new { controller = "Movies", action = "ByReleasedDate" }
+                //    );
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-        }
+        } 
+
     }
 }
